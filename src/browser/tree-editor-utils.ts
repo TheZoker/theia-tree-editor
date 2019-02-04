@@ -2,7 +2,6 @@ import { JsonSchema7 } from '@jsonforms/core';
 import { getData, getSchema, getUiSchema, JsonSchema } from '@jsonforms/core';
 import { Property } from '@jsonforms/material-tree-renderer';
 import * as _ from 'lodash';
-import { LabelProvider } from '@theia/core/lib/browser';
 
 export interface TreeEditorProps {
   uischema: any;
