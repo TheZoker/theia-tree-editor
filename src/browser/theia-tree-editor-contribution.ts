@@ -92,8 +92,9 @@ export class TheiaTreeEditorContribution extends WidgetOpenHandler<TreeEditorWid
     }));
   }
 
+  // TODO: Remove any
   protected async executeDownload(uris: URI[]): Promise<void> {
-    this.fileDownloadService.download(uris);
+    this.fileDownloadService.download(uris as any);
   }
 
   protected newUriAwareCommandHandler(handler: UriCommandHandler<URI[]>): UriAwareCommandHandler<URI[]> {

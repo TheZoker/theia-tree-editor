@@ -1,6 +1,7 @@
 import { JsonSchema7 } from '@jsonforms/core';
 import { getData, getSchema, getUiSchema } from '@jsonforms/core';
 import { Property } from '@jsonforms/material-tree-renderer';
+import * as _ from 'lodash';
 
 export interface TreeEditorProps {
   uischema: any;
@@ -20,36 +21,43 @@ export interface LabelDefinition {
   property?: string;
 }
 
+const getLabelWithProvider = (schema: JsonSchema7, element:Object, labelProvider): string => {
+  if (!_.isEmpty(labelProvider) && labelProvider[schema.$id] !== undefined) {
+
+    if (typeof labelProvider[schema.$id] === 'string') {
+      // To be backwards compatible: a simple string is assumed to be a property name
+      return element[labelProvider[schema.$id]];
+    }
+    if (typeof labelProvider[schema.$id] === 'object') {
+      const info = labelProvider[schema.$id] as LabelDefinition;
+      let label;
+      if (info.constant !== undefined) {
+        label = info.constant;
+      }
+      if (!_.isEmpty(info.property) && !_.isEmpty(element[info.property])) {
+        label = _.isEmpty(label) ?
+          element[info.property] :
+          `${label} ${element[info.property]}`;
+      }
+      if (label !== undefined) {
+        return label;
+      }
+    }
+  }
+  return undefined;
+}
+
 export const calculateLabel = (labels) =>
   (schema: JsonSchema7) => (element: Object): string => {
 
-    if (labels !== undefined && labels[schema.$id] !== undefined) {
-
-      if (typeof labels[schema.$id] === 'string') {
-        // To be backwards compatible: a simple string is assumed to be a property name
-        console.log('element', element);
-        return element[labels[schema.$id]];
-      }
-      if (typeof labels[schema.$id] === 'object') {
-        const info = labels[schema.$id] as LabelDefinition;
-        let label;
-        if (info.constant !== undefined) {
-          label = info.constant;
-        }
-        if (info.property !== undefined && element[info.property] !== undefined) {
-          label = label === undefined ?
-            element[info.property] :
-            `${label} ${element[info.property]}`;
-        }
-        if (label !== undefined) {
-          return label;
-        }
-      }
+    const label = getLabelWithProvider(schema, element, labels);
+    if(label) {
+      return label;
     }
 
     const namingKeys = Object
       .keys(schema.properties)
-      .filter(key => key === '$id' || key === 'name');
+      .filter(key => key === '$id' || key === 'name' || key === 'type');
     if (namingKeys.length !== 0) {
       return element[namingKeys[0]];
     }
