@@ -48,7 +48,7 @@ const getLabelWithProvider = (schema: JsonSchema7, element:Object, labelProvider
 }
 
 export const calculateLabel = (labels) =>
-  (schema: JsonSchema7) => (element: Object): string => {
+  (schema: JsonSchema7, element: Object): string => {
 
     const label = getLabelWithProvider(schema, element, labels);
     if(label) {
