@@ -1,7 +1,8 @@
 import { JsonSchema7 } from '@jsonforms/core';
-import { getData, getSchema, getUiSchema } from '@jsonforms/core';
+import { getData, getSchema, getUiSchema, JsonSchema } from '@jsonforms/core';
 import { Property } from '@jsonforms/material-tree-renderer';
 import * as _ from 'lodash';
+import { LabelProvider } from '@theia/core/lib/browser';
 
 export interface TreeEditorProps {
   uischema: any;
@@ -87,7 +88,10 @@ export const mapStateToTreeEditorProps = (state, ownProps) => {
     uischema: getUiSchema(state),
     schema: getSchema(state),
     filterPredicate: ownProps.filterPredicate,
-    labelProvider: ownProps.labelProvider,
+    labelProviders: {
+      forData: ownProps.labelProvider,
+      forSchema: (schema: JsonSchema, schemaPath: string) => schema.properties['type'].default
+    },
     imageProvider: ownProps.imageProvider,
     rootData: getData(state)
   };
