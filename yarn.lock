@@ -8,7 +8,7 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@jsonforms/core@^2.0.12-rc.1":
+"@jsonforms/core@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@jsonforms/core/-/core-2.2.0.tgz#138efabb48247d386f119e8c636226657ec0d377"
   dependencies:
@@ -17,7 +17,7 @@
     lodash "^4.17.4"
     uuid "^3.2.1"
 
-"@jsonforms/material-tree-renderer@^2.0.12-rc.1":
+"@jsonforms/material-tree-renderer@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@jsonforms/material-tree-renderer/-/material-tree-renderer-2.2.0.tgz#570f2a254029da7878d3afbbe94f49e8915f7dce"
   dependencies:
@@ -358,8 +358,8 @@
   resolved "https://registry.yarnpkg.com/@types/mime-types/-/mime-types-2.1.0.tgz#9ca52cda363f699c69466c2a6ccdaad913ea7a73"
 
 "@types/mime@*":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.0.tgz#5a7306e367c539b9f6543499de8dd519fac37a8b"
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.1.tgz#dc488842312a7f075149312905b5e3c0b054c79d"
 
 "@types/minimatch@*":
   version "3.0.3"
@@ -382,8 +382,8 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.3.tgz#7ee330ba7caafb98090bece86a5ee44115904c2c"
 
 "@types/react-dom@^16.0.6":
-  version "16.0.11"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.11.tgz#bd10ccb0d9260343f4b9a49d4f7a8330a5c1f081"
+  version "16.8.0"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.8.0.tgz#c565f43f9d2ec911f9e0b8f3b74e25e67879aa3f"
   dependencies:
     "@types/react" "*"
 
@@ -395,8 +395,8 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^16.4.1":
-  version "16.8.1"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.1.tgz#b431b104ecc6febda170b718caa9f50be66a6750"
+  version "16.8.2"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.2.tgz#3b7a7f7ea89d1c7d68b00849fb5de839011c077b"
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -647,10 +647,6 @@ buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
 
-builtin-modules@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
-
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
@@ -763,8 +759,8 @@ core-js@^1.0.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
 core-js@^2.4.0:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.3.tgz#4b70938bdffdaf64931e66e2db158f0892289c49"
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.4.tgz#b8897c062c4d769dd30a0ac5c73976c47f92ea0d"
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -1440,12 +1436,6 @@ is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
 
-is-builtin-module@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-1.0.0.tgz#540572d34f7ac3119f8f76c30cbc1b1e037affbe"
-  dependencies:
-    builtin-modules "^1.0.0"
-
 is-electron@^2.1.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/is-electron/-/is-electron-2.2.0.tgz#8943084f09e8b731b3a7a0298a7b5d56f6b7eef0"
@@ -1829,11 +1819,11 @@ nopt@~1.0.10:
     abbrev "1"
 
 normalize-package-data@^2.3.2, normalize-package-data@^2.3.4:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.4.2.tgz#6b2abd85774e51f7936f1395e45acb905dc849b2"
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.5.0.tgz#e66db1838b200c1dfc233225d12cb36520e234a8"
   dependencies:
     hosted-git-info "^2.1.4"
-    is-builtin-module "^1.0.0"
+    resolve "^1.10.0"
     semver "2 || 3 || 4 || 5"
     validate-npm-package-license "^3.0.1"
 
@@ -1976,6 +1966,10 @@ path-loader@^1.0.5:
   dependencies:
     native-promise-only "^0.8.1"
     superagent "^3.8.3"
+
+path-parse@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
 
 path-to-regexp@0.1.7:
   version "0.1.7"
@@ -2161,17 +2155,17 @@ react-dnd@^2.6.0:
     prop-types "^15.5.10"
 
 react-dom@^16.4.0, react-dom@^16.4.1:
-  version "16.7.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.1.tgz#ec860f98853d09d39bafd3a6f1e12389d283dbb4"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.12.0"
+    scheduler "^0.13.1"
 
 react-is@^16.6.3, react-is@^16.7.0:
-  version "16.7.0"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.7.0.tgz#c1bd21c64f1f1364c6f70695ec02d69392f41bfa"
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
 
 react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -2200,13 +2194,13 @@ react-virtualized@^9.20.0:
     react-lifecycles-compat "^3.0.4"
 
 react@^16.4.0, react@^16.4.1:
-  version "16.7.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.8.1.tgz#ae11831f6cb2a05d58603a976afc8a558e852c4a"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.12.0"
+    scheduler "^0.13.1"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -2335,6 +2329,12 @@ require-main-filename@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
 
+resolve@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.10.0.tgz#3bdaaeaf45cc07f375656dfd2e54ed0810b101ba"
+  dependencies:
+    path-parse "^1.0.6"
+
 rimraf@^2.2.8, rimraf@^2.6.2:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
@@ -2365,9 +2365,9 @@ safe-buffer@5.1.2, safe-buffer@^5.0.1, safe-buffer@^5.1.1, safe-buffer@^5.1.2, s
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
-scheduler@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
+scheduler@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.1.tgz#1a217df1bfaabaf4f1b92a9127d5d732d85a9591"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
