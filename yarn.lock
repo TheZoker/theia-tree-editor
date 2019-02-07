@@ -17,9 +17,9 @@
     lodash "^4.17.4"
     uuid "^3.2.1"
 
-"@jsonforms/material-tree-renderer@^2.2.0":
+"@jsonforms/material-tree-renderer@https://github.com/TheZoker/jsonforms-material-tree-renderer.git#master":
   version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@jsonforms/material-tree-renderer/-/material-tree-renderer-2.2.0.tgz#570f2a254029da7878d3afbbe94f49e8915f7dce"
+  resolved "https://github.com/TheZoker/jsonforms-material-tree-renderer.git#db2db52f1f24c4ebfe232ac61f4f0208c6ea17ca"
   dependencies:
     react-dnd "^2.6.0"
     react-dnd-html5-backend "^2.6.0"
