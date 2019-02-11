@@ -14,7 +14,7 @@ so bear with us :)
 
 ```
 npm 6.4.1
-node 11.4.2
+node 11.4.0
 yarn 1.13.0
 ```
 
